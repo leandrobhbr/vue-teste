@@ -1,0 +1,47 @@
+$padding: 0;
+h2 {
+    color: red;
+}
+.conteudo {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(248, 248, 248);
+}
+.linha {
+    display: flex;
+}
+.coluna {
+    float: left;
+}
+.coluna-8 {
+    width: 66%;
+}
+.coluna-4 {
+    width: 33%;
+}
+.div-clear {
+    clear: both;
+}
+nav {
+    ul {
+        list-style: none;
+        padding: $padding;
+        margin: 0;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            padding: 5px;
+
+            &.active {
+                color: black;
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+    }
+}
