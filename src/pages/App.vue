@@ -11,14 +11,10 @@
 
 <script type="text/babel">
 	import appHeader from '../components/Header.vue'
-	import appNav from '../components/Nav.vue'
-	import popover from '../components/Popover.vue'
 
 	export default {
 		components: {
-			appHeader,
-			appNav,
-			popover
+			appHeader
 		}
 	}
 </script>

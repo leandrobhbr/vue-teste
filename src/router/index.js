@@ -20,18 +20,19 @@ const router = new Router({
 			name: 'listagem-usuarios',
 		},
 		{
-			path: '/novo-usuario',
+			path: '/novo-usuario/:pg?',
 			component: NovoUsuario,
 			name: 'novo-usuario'
 		},
 		{
-			path: '/detalhes-usuario/:id',
+			path: '/detalhes-usuario',
 			component: DetalhesUsuario,
-			name: 'detalhes-usuario'
+			name: 'detalhes-usuario',
+			props: (route) => ({ usuario: null, ...route.params })
 		},
 		{
-			path: '/editar-usuario/:id',
-			component: NovoUsuario,
+			path: '/editar-usuario/:id/:pg?',
+			component: EditarUsuario,
 			name: 'editar-usuario'
 		}
 	]

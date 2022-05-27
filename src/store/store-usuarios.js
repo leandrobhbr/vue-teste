@@ -1,12 +1,19 @@
 import axios from 'axios'
 
 const state = {
+  ultimoUsuarioVisualizado: null
 }
 
 const mutations = {
+  SET_ULTIMO_USUARIO_VISUALIZADO (state, ultimoUsuarioVisualizado) {
+    state.ultimoUsuarioVisualizado = ultimoUsuarioVisualizado
+  }
 }
 
 const actions = {
+  setUltimoUsuarioVisualizado (context, ultimoUsuarioVisualizado) {
+    context.commit('SET_ULTIMO_USUARIO_VISUALIZADO', ultimoUsuarioVisualizado)
+  },
   async listaDeUsuarios (context, pg = 1) {
     return new Promise((resolve, reject) => {
       axios.get(`https://reqres.in/api/users?page=${pg}`)
