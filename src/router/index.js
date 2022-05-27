@@ -15,28 +15,24 @@ const router = new Router({
 	linkActiveClass: 'active',
 	routes: [
 		{
-			path: '/',
+			path: '/:pg?',
 			component: ListagemUsuarios,
 			name: 'listagem-usuarios',
-			children: [
-				{
-					path: 'detalhes-usuario/:id',
-					component: DetalhesUsuario,
-					props: true,
-					name: 'detalhes-usuario'
-				},
-				{
-					path: 'editar-usuario/:id',
-					component: EditarUsuario,
-					props: true,
-					name: 'editar-usuario'
-				}
-			]
 		},
 		{
 			path: '/novo-usuario',
 			component: NovoUsuario,
 			name: 'novo-usuario'
+		},
+		{
+			path: '/detalhes-usuario/:id',
+			component: DetalhesUsuario,
+			name: 'detalhes-usuario'
+		},
+		{
+			path: '/editar-usuario/:id',
+			component: NovoUsuario,
+			name: 'editar-usuario'
 		}
 	]
 })

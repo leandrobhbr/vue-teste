@@ -1,47 +1,43 @@
 $padding: 0;
-h2 {
-    color: red;
+.box-usuario {
+    background-color: #F7F7F7;
+    margin-bottom: 15px;
+    min-height: 120px;
+    border-radius: 5px;
+    border-left: 2px solid #000;
 }
-.conteudo {
-    width: 80%;
+.box-usuario-topo {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(248, 248, 248);
 }
-.linha {
-    display: flex;
+.box-usuario img {
+    max-width: 80px;
+    border-radius: 5px;
+    margin: 20px 0px 0px 20px;
 }
-.coluna {
-    float: left;
+.box-usuario-text {
+    padding: 20px;
 }
-.coluna-8 {
-    width: 66%;
+.box-icons i {
+    color: #797979;
+    margin-left: 5px;
+    cursor: pointer;
 }
-.coluna-4 {
-    width: 33%;
+.box-icons {
+    margin-top: 40%;
 }
-.div-clear {
-    clear: both;
+.box-centro {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 588px;
 }
-nav {
-    ul {
-        list-style: none;
-        padding: $padding;
-        margin: 0;
-
-        li {
-            display: inline-block;
-        }
-
-        a {
-            display: block;
-            padding: 5px;
-
-            &.active {
-                color: black;
-                pointer-events: none;
-                cursor: default;
-            }
-        }
-    }
+.paginacao {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    color: #4094ff;
+    cursor: pointer;
+}
+.box-paginacao {
+    text-align: center;
 }

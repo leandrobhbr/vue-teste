@@ -4,9 +4,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import VueResource from 'vue-resource'
 import createLogger from 'vuex/dist/logger'
-import users from './modules/users/index'
-import loader from './modules/loader/index'
-import user from './modules/user'
+import usuarios from './store-usuarios'
 
 Vue.use(Vuex)
 Vue.use(VueResource)
@@ -17,9 +15,7 @@ const debug = process.env.NODE_ENV !== 'production'
 
 export default new Vuex.Store({
 	modules: {
-		users,
-		user,
-		loader
+		usuarios
 	},
 	strict: false,
 	middlewares: debug ? [createLogger()] : []

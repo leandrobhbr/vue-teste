@@ -1,16 +1,10 @@
 <template>
-	<div>
-		<div class="conteudo">
-			<!-- Header -->
-			<app-header></app-header>
-
-			<!-- Navigation -->
-			<app-nav></app-nav>
-
-			<!-- Main content -->
-			<div role="main">
-				<router-view></router-view>
-			</div>
+	<div class="container">
+		<!-- Header -->
+		<app-header></app-header>
+		<!-- Main content -->
+		<div role="main">
+			<router-view></router-view>
 		</div>
 	</div>
 </template>
@@ -19,23 +13,12 @@
 	import appHeader from '../components/Header.vue'
 	import appNav from '../components/Nav.vue'
 	import popover from '../components/Popover.vue'
-	import { mapActions } from 'vuex'
 
 	export default {
 		components: {
 			appHeader,
 			appNav,
 			popover
-		},
-
-		methods: {
-			...mapActions([
-				'getUser'
-			])
-		},
-
-		created(){
-			this.getUser()
 		}
 	}
 </script>

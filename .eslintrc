@@ -140,8 +140,8 @@
 		],
 		"linebreak-style": [
 			"error",
-			// "unix"
-			"windows"
+			"unix"
+			// "windows"
 		],
 		"guard-for-in": 2,
 		"prefer-const": 2,
