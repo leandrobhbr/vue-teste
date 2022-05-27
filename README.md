@@ -1,5 +1,5 @@
 # vue-teste
-[Projeto web](https://nodejs.org/en/)
+[DEMO](https://leandrobhbr.github.io/vue-teste/#/)
 > Vue + vue-router + vuex + webpack + CRUD
 
 Este repositório foi criado para demonstrar um aplicativo simples que usa vue e vue-router-sync para passar dados por todo o aplicativo usando o padrão de gerenciamento de estado vuex.
