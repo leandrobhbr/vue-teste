@@ -1,9 +1,5 @@
 # vue-teste
-
-![npm][npm-version-image]
-[![Dependency Status][dep-image]][dep-url]
-[![devDependency Status][dev-dep-image]][dev-dep-url]
-
+[Projeto web](https://nodejs.org/en/)
 > Vue + vue-router + vuex + webpack + CRUD
 
 Este repositório foi criado para demonstrar um aplicativo simples que usa vue e vue-router-sync para passar dados por todo o aplicativo usando o padrão de gerenciamento de estado vuex.
@@ -43,5 +39,3 @@ $ npm run build
 $ npm start
 ```
 **Your primary browser will automatically open at localhost:8080**
-
-[dep-url]: https://david-dm.org/JFusco/vue-router-vuex-example
