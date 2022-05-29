@@ -3,7 +3,7 @@
         <FormUsuario>
             <template v-slot:header>
                 <div class="row">
-                    <div class="col-6 col-md-6">USUÁRIOS</div>
+                    <div class="col-6 col-md-6"><h2>Usuários</h2></div>
                     <div class="col-6 col-md-6 text-right">
                         <button type="button" class="btn btn-light btn-lg" @click="$router.go(-1)">Cancelar</button>
                     </div>

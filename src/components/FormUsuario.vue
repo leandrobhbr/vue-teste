@@ -1,21 +1,21 @@
 <template>
 	<div>
         <slot name="header"></slot>
-        <form>
+        <form class="form-usuario">
             <div class="form-group">
                 <label for="nomeUsuario">Nome do usuário</label>
-                <input v-model="form.nome" type="text" class="form-control" id="nomeUsuario" placeholder="Informe">
+                <input v-model="form.nome" type="text" class="form-control input-group-lg" id="nomeUsuario" placeholder="Informe">
             </div>
             <div class="form-group">
                 <label for="funcaoUsuario">Função do usuário</label>
-                <select v-model="form.funcao" class="form-control" id="funcaoUsuario">
+                <select v-model="form.funcao" class="form-control input-group-lg" id="funcaoUsuario">
                     <option value=''>Escolha a função</option>
                     <template v-for="(funcao, index) in funcoes">
                         <option :value="funcao">{{ funcao }}</option>
                     </template>
                 </select>
             </div>
-            <button type="button" class="btn btn-dark w-100" @click="salvar">Salvar dados do usuário</button>
+            <button type="button" class="btn btn-dark w-100 btn-lg" @click="salvar">Salvar dados do usuário</button>
         </form>
 	</div>
 </template>

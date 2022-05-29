@@ -1,12 +1,14 @@
 <template>
+<div>
+	<!-- Header -->
+	<app-header></app-header>
 	<div class="container">
-		<!-- Header -->
-		<app-header></app-header>
 		<!-- Main content -->
 		<div role="main">
 			<router-view></router-view>
 		</div>
 	</div>
+</div>
 </template>
 
 <script type="text/babel">

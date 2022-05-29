@@ -1,4 +1,9 @@
 $padding: 0;
+h2 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 700;
+}
 .box-usuario {
     background-color: #F7F7F7;
     margin-bottom: 15px;
@@ -49,4 +54,28 @@ $padding: 0;
 }
 .text-right {
     text-align: right;
+}
+.nav-menu li {
+    list-style: none;
+    display:inline-block;
+    padding: 10px;
+}
+.nav-menu li a{
+}
+.nav-menu {
+    background-color: #f5f5f5;
+}
+.form-usuario {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-usuario label {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.form-usuario input, .form-usuario select {
+    margin-bottom: 30px;
+    height: 55px;
 }

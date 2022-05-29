@@ -12,9 +12,9 @@
         </div>
         <div class="col-4 col-sm-3 col-md-3">
             <div class="box-icons">
-                <i class="material-icons" @click="editar(usuario.id)">edit</i>
-                <i class="material-icons" @click="excluir(usuario.id, index)">delete</i>
-                <i class="material-icons" @click="visualizar(usuario)">remove_red_eye</i>
+                <i class="material-icons" title="editar" @click="editar(usuario.id)">edit</i>
+                <i class="material-icons" title="excluir" @click="excluir(usuario.id, index)">delete</i>
+                <i class="material-icons" title="visualizar" @click="visualizar(usuario)">remove_red_eye</i>
             </div>
         </div>
     </div>

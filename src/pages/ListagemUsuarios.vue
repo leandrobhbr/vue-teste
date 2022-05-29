@@ -4,8 +4,8 @@
             <div class="col-12 col-sm-6 col-md-6">
                 <h2>Usuários</h2>
             </div>
-            <div class="col-12 col-sm-6 col-md-6">
-                <button @click="cadastrar()">CADASTRAR</button>
+            <div class="col-12 col-sm-6 col-md-6 text-right">
+                <button @click="cadastrar()" type="button" class="btn btn-dark btn-lg">Novo Usuário</button>
             </div>
         </div>
         <DataTableUsuarios />

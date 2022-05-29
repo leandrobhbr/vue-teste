@@ -29,3 +29,7 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+	@import '~styles/estilo';
+</style>

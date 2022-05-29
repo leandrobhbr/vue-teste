@@ -3,8 +3,8 @@
         <FormUsuario>
             <template v-slot:header>
                 <div class="row">
-                    <div class="col-6 col-md-6">EDITAR USUÁRIO</div>
-                    <div class="col-6 col-md-6 text-right">
+                    <div class="col-8 col-md-8"><h2>Editar Usuário</h2></div>
+                    <div class="col-4 col-md-4 text-right">
                         <button type="button" class="btn btn-light btn-lg" @click="$router.go(-1)">Voltar</button>
                     </div>
                 </div>
