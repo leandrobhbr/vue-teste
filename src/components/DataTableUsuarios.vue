@@ -69,7 +69,7 @@ export default {
         },
         visualizar(usuario) {
             this.setUltimoUsuarioVisualizado(usuario)
-            this.$router.push({ name: 'detalhes-usuario', params: { usuario: usuario } })
+            this.$router.push({ name: 'detalhes-usuario', params: { id: usuario.id } })
         },
         voltar(pgAtual) {
             const p = pgAtual - 1

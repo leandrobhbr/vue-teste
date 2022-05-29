@@ -36,9 +36,9 @@ const actions = {
         })
     })
   },
-  async criarUsuario (context, usuario) {
+  async criarUsuario (context, form) {
     return new Promise((resolve, reject) => {
-      axios.post('https://reqres.in/api/users/', usuario)
+      axios.post('https://reqres.in/api/users/', form)
         .then((response) => {
           resolve(response)
         })

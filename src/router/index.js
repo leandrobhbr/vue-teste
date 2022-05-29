@@ -25,10 +25,9 @@ const router = new Router({
 			name: 'novo-usuario'
 		},
 		{
-			path: '/detalhes-usuario',
+			path: '/detalhes-usuario/:id',
 			component: DetalhesUsuario,
-			name: 'detalhes-usuario',
-			props: (route) => ({ usuario: null, ...route.params })
+			name: 'detalhes-usuario'
 		},
 		{
 			path: '/editar-usuario/:id/:pg?',

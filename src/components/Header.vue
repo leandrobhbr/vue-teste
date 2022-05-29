@@ -8,7 +8,7 @@
 				<router-link :to="{ name: 'novo-usuario' }">Novo usuário</router-link>
 			</li>
 			<li v-if="ultimoUsuarioVisualizado">
-				<router-link :to="{ name: 'detalhes-usuario', params: { usuario: ultimoUsuarioVisualizado } }">Último visualizado: {{ nomeCompleto }}</router-link>
+				<router-link :to="{ name: 'detalhes-usuario', params: { id: ultimoUsuarioVisualizado.id } }">Último visualizado: {{ nomeCompleto }}</router-link>
 			</li>
 		</ul>
 	</nav>
