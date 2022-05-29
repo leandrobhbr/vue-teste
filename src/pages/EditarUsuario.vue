@@ -1,35 +1,28 @@
 <template>
-	<div>
-		<h2>Editar Usuário</h2>
-		{{ usuario }}
+	<div class="box-centro box-novo-usuario">
+        <FormUsuario>
+            <template v-slot:header>
+                <div class="row">
+                    <div class="col-6 col-md-6">EDITAR USUÁRIO</div>
+                    <div class="col-6 col-md-6 text-right">
+                        <button type="button" class="btn btn-light btn-lg" @click="$router.go(-1)">Voltar</button>
+                    </div>
+                </div>
+            </template>
+        </FormUsuario>
+        <DataTableUsuarios />
 	</div>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
+import DataTableUsuarios from '../components/DataTableUsuarios.vue'
+import FormUsuario from '../components/FormUsuario.vue'
 
 export default {
-    data() {
-        return {
-            usuario: null
-        }
-    },
-    methods: {
-        ...mapActions('usuarios', ['buscaUsuario']),
-        getUsuarioParaEdicao(id) {
-            this.buscaUsuario(id)
-            .then(response => {
-                this.usuario = response.data.data
-            }, error => {
-                console.log(error) // falta tratar erros
-                alert('Erro ao buscar usuário para edição.') // tem de melhorar apresentação
-            })
-        }
-    },
-    mounted() {
-	const id = (this.$route.params.id) ? this.$route.params.id : 1
-	// tratar url sem id
-    this.getUsuarioParaEdicao(id)
+    components: {
+        DataTableUsuarios,
+        FormUsuario
     }
 }
 </script>

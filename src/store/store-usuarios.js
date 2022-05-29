@@ -47,9 +47,9 @@ const actions = {
         })
     })
   },
-  async alterarUsuario (context, id) {
+  async alterarUsuario (context, form) {
     return new Promise((resolve, reject) => {
-      axios.put(`https://reqres.in/api/users/${id}`)
+      axios.put(`https://reqres.in/api/users/${form.id}`, form)
         .then((response) => {
           resolve(response)
         })
