@@ -3,12 +3,12 @@
 <div v-for="(usuario, index) in usuarios">
     <div class="row box-usuario box-centro">
         <div class="col-4 col-sm-3 col-md-3">
-            <img :src="usuario.avatar" />
+            <img :src="usuario.avatar" class="avatar80" />
         </div>
         <div class="col-4 col-sm-6 col-md-6 box-usuario-text">
-            #{{ usuario.id }} <br>
-            {{ usuario.first_name }} {{ usuario.last_name }} <br>
-            {{ usuario.email }}
+            <span class="sub-titulo">#{{ usuario.id }}</span> <br>
+            <span class="titulo">{{ usuario.first_name }} {{ usuario.last_name }}</span> <br>
+            <span class="sub-titulo">{{ usuario.email }}</span>
         </div>
         <div class="col-4 col-sm-3 col-md-3">
             <div class="box-icons">

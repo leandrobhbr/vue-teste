@@ -1,26 +1,26 @@
 <template>
 	<div class="box-centro box-detalhes-usuario">
     <div class="row">
-     <div class="col-6 col-md-6">#{{ usuario.id }}</div>
+     <div class="col-6 col-md-6"><h2>#{{ usuario.id }}</h2></div>
      <div class="col-6 col-md-6 text-right">
       <button type="button" class="btn btn-light btn-lg" @click="$router.go(-1)">Voltar</button>
      </div>
     </div>
 		<div class="row">
       <div class="col-4 col-md-4">
-        <img :src="usuario.avatar" />
+        <img :src="usuario.avatar" class="avatar120" />
       </div>
-      <div class="col-4 col-md-4">
+      <div class="col-4 col-md-4 mt-5">
         <label>Primeiro nome</label>
         <dd>{{ usuario.firstName }}</dd>
       </div>
-      <div class="col-4 col-md-4">
+      <div class="col-4 col-md-4 mt-5">
         <label>Último nome</label>
         <dd>{{ usuario.lastName }}</dd>
       </div>
     </div>
 
-    <label>Endereço de e-mail</label>
+    <label class="mt-3">Endereço de e-mail</label>
     <dd>{{ usuario.email }}</dd>
 
     <label>Link do avatar</label>

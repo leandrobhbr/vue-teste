@@ -42,6 +42,10 @@ export default {
     methods: {
         ...mapActions('usuarios', ['criarUsuario', 'buscaUsuario', 'alterarUsuario']),
         salvar() {
+            if (this.nome === null || this.form.funcao === '') {
+                alert('Nome e Função são campos obrigatórios \n(será trocado pelo sweet alert)')
+                return
+            }
             if (!this.form.id) {
                 this.criar()
                 return
@@ -52,6 +56,7 @@ export default {
             this.criarUsuario(this.form)
             .then(response => {
                 alert('Usuário criado com sucesso \n(será trocado pelo sweet alert)')
+                this.$router.push({ name: 'listagem-usuarios' })
             }, error => {
                 console.log(error) // falta tratar erros
                 alert('Erro ao criar usuário.') // tem de melhorar apresentação
@@ -61,6 +66,7 @@ export default {
             this.alterarUsuario(this.form)
             .then(response => {
                 alert('Usuário alterado com sucesso \n(será trocado pelo sweet alert)')
+                this.$router.push({ name: 'listagem-usuarios' })
             }, error => {
                 console.log(error) // falta tratar erros
                 alert('Erro ao criar usuário.') // tem de melhorar apresentação
